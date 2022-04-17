@@ -1,0 +1,24 @@
+[
+    {
+        "image": "https://raw.githubusercontent.com/kiron0/fakeData-for-lucky-one/main/images/mosh.jpg",
+        "id": 1,
+        "name": "Mosh Hamedani",
+        "comment": "Raian is an excellent tutor. He  always on time and communicated with me each week to confirm our sessions. He make the material easy to understand for my daughter and she ended up with an A in the class!!",
+        "rate": 4.8
+    },
+    {
+        "image": "https://raw.githubusercontent.com/kiron0/fakeData-for-lucky-one/main/images/angela.jpg",
+        "id": 2,
+        "name": "Angela Yu",
+        "comment": "We love  our tutor of many years, Raian. he works with us to find a great fit for my daughter and she looks forward to her weekly hour of tutoring.",
+        "rate": 4.2
+    },
+    {
+        "image": "https://raw.githubusercontent.com/kiron0/fakeData-for-lucky-one/main/images/sara.jpg",
+        "id": 3,
+        "name": "Sara Soueidan",
+        "comment": "It has been wonderful for our family and we absolutely respect Mr. Raian who has been tutoring our son. learning  school. Thank you for making everything so seamless and easy for us! We  will definitely continue in the fall when school resumes.",
+        "rate": 4
+    }
+    
+]

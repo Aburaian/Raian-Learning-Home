@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div>
+    <header>
       <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img height={30} src={logo} alt="" />
-            <span className="p-2">Raian Learing Home</span>
+            <span className="p-2">Raian Learning Home</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -36,7 +36,7 @@ const Header = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </div>
+    </header>
   );
 };
 
