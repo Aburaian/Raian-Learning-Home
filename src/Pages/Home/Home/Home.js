@@ -7,9 +7,6 @@ import Services from "../Services/Services";
 const Home = () => {
   return (
     <div>
-      <h1 className="p-2 text-center">
-        Raian <span className="text-primary fw-bold">Learning Home</span>
-      </h1>
       <Bannar></Bannar>
       <Services></Services>
       <Reviews></Reviews>
