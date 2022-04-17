@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import LogInGoogle from "./LoginGoogle/LogInGoogle";
 
 const Login = () => {
   return (
@@ -24,8 +25,9 @@ const Login = () => {
             </Link>
           </p>
         </Form.Text>
+        <LogInGoogle></LogInGoogle>
         <Button
-          className="mx-auto d-block mb-2 px-4 py-2 text-uppercase"
+          className="mx-auto w-50 d-block mb-2 px-4 py-2 text-uppercase"
           variant="primary"
           type="submit"
         >
