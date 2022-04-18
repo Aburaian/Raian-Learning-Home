@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Button, Form } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import LogInGoogle from "./LoginGoogle/LogInGoogle";
@@ -8,8 +8,16 @@ import LogInGoogle from "./LoginGoogle/LogInGoogle";
 const Login = () => {
   const emailRef = useRef("");
   const passwordRef = useRef("");
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  let from = location.state?.from?.pathname || "/";
   const [signInWithEmailAndPassword, user, error] =
     useSignInWithEmailAndPassword(auth);
+
+  if (user) {
+    navigate(from, { replace: true });
+  }
 
   const handleLogIn = (event) => {
     event.preventDefault();
@@ -43,7 +51,6 @@ const Login = () => {
             </Link>
           </p>
         </Form.Text>
-        <LogInGoogle></LogInGoogle>
         <Button
           className="mx-auto w-50 d-block mb-2 px-4 py-2 text-uppercase"
           variant="primary"
@@ -52,6 +59,7 @@ const Login = () => {
           Log in
         </Button>
       </Form>
+      <LogInGoogle></LogInGoogle>
     </div>
   );
 };

@@ -11,11 +11,12 @@ const Register = () => {
   const emailRef = useRef("");
   const passwordRef = useRef("");
   const navigate = useNavigate();
+
   const [createUserWithEmailAndPassword, user, error] =
     useCreateUserWithEmailAndPassword(auth);
-  const navigateLogin = () => {
-    navigate("/login");
-  };
+  if (user) {
+    navigate("/home");
+  }
   const handleRegister = (event) => {
     event.preventDefault();
     const firstName = firstNameRef.current.value;
@@ -69,7 +70,6 @@ const Register = () => {
             </Link>
           </p>
         </Form.Text>
-        <LogInGoogle></LogInGoogle>
         <Button
           className="mx-auto w-50 d-block mb-2 px-4 py-2 text-uppercase"
           variant="primary"
@@ -78,6 +78,7 @@ const Register = () => {
           Register
         </Button>
       </Form>
+      <LogInGoogle></LogInGoogle>
     </div>
   );
 };

@@ -1,6 +1,19 @@
 import React from "react";
+import { useSignInWithGoogle } from "react-firebase-hooks/auth";
+import { useNavigate } from "react-router-dom";
+import auth from "../../../../firebase.init";
 
 const LogInGoogle = () => {
+  const [signInWithGoogle, user, error] = useSignInWithGoogle(auth);
+  const navigate = useNavigate();
+  let errorElement;
+  if (error) {
+    errorElement = <p className="text-danger">Error: {error?.message}</p>;
+  }
+
+  if (user) {
+    navigate("/home");
+  }
   return (
     <div>
       <div className="d-flex align-items-center">
@@ -8,8 +21,12 @@ const LogInGoogle = () => {
         <p className="mt-2 text-primary px-2">or</p>
         <div style={{ height: "1px" }} className="bg-info w-50"></div>
       </div>
+      {errorElement}
       <div className="mb-4">
-        <button className="btn btn-primary w-50 d-block mx-auto my-2">
+        <button
+          onClick={() => signInWithGoogle()}
+          className="btn btn-primary w-50 d-block mx-auto my-2"
+        >
           <img
             className="w-25"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Google_2011_logo.png/640px-Google_2011_logo.png"
