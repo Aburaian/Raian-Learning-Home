@@ -15,7 +15,7 @@
 
 - A form has been created on the login page. Here the user can login with his email password. You can register for a new account and then login. You can also login with Google. Besides, if you give any forgotten information, Ero will give a message. Sophisticated design in the form.
 
-##The equipment used to create the website
+## The equipment used to create the website
 
 - react
 - bootstrap
