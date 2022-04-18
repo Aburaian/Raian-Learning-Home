@@ -12,15 +12,15 @@ const About = () => {
           <p className="h5">
             Mygoal:{" "}
             <small>
-              আমার লক্ষ্য একজন ভালোমানের প্রোগ্রামার হওয়া। এই লক্ষ্য নিয়ে এই
-              কোর্সে ভর্তি হয় আমি। রিয়েক্ট আসার আগ পর্যন্ত লক্ষ্য নিয়ে ভালো
-              এগিয়ে যাচ্ছিলাম। তবে পরীক্ষা আর রিয়েক্ট মারামারিতে একটু পিছিয়ে
-              পড়েছি। তবে আমি চেষ্টা করি এবং সবসময় চিন্তুা করি যে, প্রতি দিন নতুন
-              কি শিখলাম কি জানলাম প্রোগ্রামিং বিষয়ে। কোর্সটা বেশিদিন নাই বাকি
-              সময়তে আমার টার্গেট হলো কোথায় কি গ্যাপ আছে সেগুলো দেখা এবং আমার
-              লক্ষে পৌছাতে পারি সেজন্য প্রচুর পরিশ্রম করা। তবে সবসময় নিজের ফুল
-              টার্গেট নিয়ে সমানে চলতে পারি না। তবে প্রবল ইচ্ছাশক্তি দিয়ে বলতে
-              চাই প্রোগ্রামিং ছাড়তে নয় শিখেই লাইভে কিছু করতে চাই।
+              My goal is to be a good programmer. I was admitted to this course
+              with this goal in mind. I was going well with the goal until React
+              came. However, I fell a little behind in the test and react fight.
+              But I try and always think about what I learned every day, what I
+              learned about programming. The course is not long. The rest of the
+              time my target is to see where the gaps are and work hard to reach
+              my goal. But I can't always keep up with my target. But I want to
+              say with strong will that I want to do something in life without
+              learning programming.
             </small>{" "}
           </p>
         </div>
