@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Raian Learning Home
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### This project link
+[Raian Learning Home](https://computer-reviews-9.netlify.app/).
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+- The name of the website is Raian Learning Home.  As seen on this website, Raian teaches students in three categories.
 
-### `npm start`
+- There are five pages , logo and website title in the menu bar. The name of the page is: Home, Services,  Reviews, Blogs, About, login.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Raian Learning Home three services are given on the home page. in the home page another section reviews section. three main reviews are put on home page. Footer section also includes on home page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- There are two columns in one section on the About page. Names and targets are given in a column. Pictures are placed in another column. Three questions have been answered on the block page.
 
-### `npm test`
+ -A form has been created on the login page. Here the user can login with his email password. You can register for a new account and then login. You can also login with Google. Besides, if you give any forgotten information, Ero will give a message. Sophisticated design in the form.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##The equipment used to create the website
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-react
+-bootstrap
+-react bootstrap
+-react dom
+-react router dom
+-firebase
+-react firebase hooks
+-react toastify
+-react scripts

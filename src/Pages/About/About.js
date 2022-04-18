@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="container mt-4 bg-info p-4">
       <div className="row">
-        <div className="col-lg-6 ">
+        <div className="col-lg-6 col-sm-12 ">
           <h3>
             <span>Name:</span> <small className="h4">MD. Abu Raian Sakil</small>
           </h3>
@@ -24,7 +24,7 @@ const About = () => {
             </small>{" "}
           </p>
         </div>
-        <div className="col-lg-6 text-center">
+        <div className="col-lg-6 col-sm-12 text-center">
           <img className="w-50 rounded mt-2" src={Image} alt="" />
         </div>
       </div>
