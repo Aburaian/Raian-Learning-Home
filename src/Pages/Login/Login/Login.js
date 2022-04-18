@@ -12,11 +12,16 @@ const Login = () => {
   const location = useLocation();
 
   let from = location.state?.from?.pathname || "/";
+  let errorElement;
   const [signInWithEmailAndPassword, user, error] =
     useSignInWithEmailAndPassword(auth);
 
   if (user) {
     navigate(from, { replace: true });
+  }
+
+  if (error) {
+    errorElement = <p className="text-danger">Error: {error?.message}</p>;
   }
 
   const handleLogIn = (event) => {
@@ -41,6 +46,7 @@ const Login = () => {
           />
         </Form.Group>
         <Form.Text className="text-muted text-center">
+          {errorElement}
           <p>
             Create New Account.{" "}
             <Link

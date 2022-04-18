@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import About from "./Pages/About/About";
 import Blogs from "./Pages/Blogs/Blogs";
-import Chectout from "./Pages/Chectout/Chectout";
+import Checkout from "./Pages/Checkout/Checkout";
 import Home from "./Pages/Home/Home/Home";
 import Reviews from "./Pages/Home/Reviews/Reviews";
 import Services from "./Pages/Home/Services/Services";
@@ -29,7 +29,7 @@ function App() {
           path="/checkout"
           element={
             <RequireAuth>
-              <Chectout></Chectout>
+              <Checkout></Checkout>
             </RequireAuth>
           }
         ></Route>
