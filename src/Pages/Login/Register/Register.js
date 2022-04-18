@@ -13,7 +13,7 @@ const Register = () => {
   const navigate = useNavigate();
 
   const [createUserWithEmailAndPassword, user, error] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
   if (user) {
     navigate("/home");
   }
@@ -27,7 +27,7 @@ const Register = () => {
     createUserWithEmailAndPassword(email, password);
   };
   return (
-    <div className="container w-50 mx-auto bg-dark p-4 mt-4 h-400">
+    <div className="container w-50 mx-auto bg-info p-4 mt-4 h-400">
       <h2 className="text-center text-primary fw-bold my-4">Please Register</h2>
       <Form onSubmit={handleRegister}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -64,7 +64,7 @@ const Register = () => {
             Already have an account?{" "}
             <Link
               to="/login"
-              className="text-primary pe-auto text-decoration-none"
+              className="text-primary fw-bolder pe-auto text-decoration-none"
             >
               Please Login
             </Link>

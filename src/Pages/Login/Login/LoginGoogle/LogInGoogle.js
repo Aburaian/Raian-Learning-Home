@@ -4,9 +4,13 @@ import { useNavigate } from "react-router-dom";
 import auth from "../../../../firebase.init";
 
 const LogInGoogle = () => {
-  const [signInWithGoogle, user, error] = useSignInWithGoogle(auth);
+  const [signInWithGoogle, user, error, loading] = useSignInWithGoogle(auth);
   const navigate = useNavigate();
   let errorElement;
+
+  if (loading) {
+    return;
+  }
   if (error) {
     errorElement = <p className="text-danger">Error: {error?.message}</p>;
   }
@@ -17,9 +21,9 @@ const LogInGoogle = () => {
   return (
     <div>
       <div className="d-flex align-items-center">
-        <div style={{ height: "1px" }} className="bg-info w-50"></div>
+        <div style={{ height: "1px" }} className="bg-dark w-50"></div>
         <p className="mt-2 text-primary px-2">or</p>
-        <div style={{ height: "1px" }} className="bg-info w-50"></div>
+        <div style={{ height: "1px" }} className="bg-dark w-50"></div>
       </div>
       {errorElement}
       <div className="mb-4">
