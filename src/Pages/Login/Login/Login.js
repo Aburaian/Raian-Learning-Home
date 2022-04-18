@@ -55,13 +55,19 @@ const Login = () => {
       <h2 className="text-center text-primary fw-bold my-4">Please Login</h2>
       <Form onSubmit={handleLogIn}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Control ref={emailRef} type="email" placeholder="Enter email" />
+          <Form.Control
+            ref={emailRef}
+            type="email"
+            placeholder="Enter email"
+            required
+          />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Control
             ref={passwordRef}
             type="password"
             placeholder="Password"
+            required
           />
         </Form.Group>
         <Form.Text className="text-muted text-center">
