@@ -9,7 +9,7 @@ const About = () => {
           <h3>
             <span>Name:</span> <small className="h4">MD. Abu Raian Sakil</small>
           </h3>
-          <p className="h5">
+          <p>
             Mygoal:{" "}
             <small>
               My goal is to be a good programmer. I was admitted to this course
